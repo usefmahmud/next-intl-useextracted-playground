@@ -7,7 +7,13 @@ export default function Home() {
   return (
     <div>
       <h1>{t("Hello world")}</h1>
-      <h2>{t("Hello world")}</h2>
+      <p>{t("Welcome to our application")}</p>
+
+      <p>
+        {t("Your Name is not {name}", {
+          name: "Yousef",
+        })}
+      </p>
     </div>
   );
 }
